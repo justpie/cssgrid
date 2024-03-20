@@ -1,0 +1,21 @@
+<main class="main">
+    <div class="content">
+        <cssgrid
+            class="cssGrid"
+            [display]="display"
+            [columns]="columns"
+            [rows]="rows"
+            [columnGap]="gap"
+            [rowGap]="gap"
+        >
+            <cssgrid-item
+                *ngFor="let item of items; let r = index"
+                [area]="item.area"
+                [justify]="item.justify"
+                [align]="item.justify"
+            >
+                <p>{{ r }}</p>
+            </cssgrid-item>
+        </cssgrid>
+    </div>
+</main>
